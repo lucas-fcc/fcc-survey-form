@@ -8,20 +8,158 @@
 
   <title>FCC Survey Form</title>
   
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bg-light">
 
+  <main class="mt-4 mb-4 p-3">
+    <div class="container">
+      <div class="row">
+        <div class="card border border-info mx-auto">
+
+          <h1 id="title" class="card-header bg-info text-white text-center">
+            FCC Survey Form
+          </h1>
+
+          <div class="card-body">
+            <p id="description" class="card-subtitle text-center text-muted mb-3">
+                Let us know how we can improve freeCodeCamp 
+            </p>
+          
+            <form id="survey-form" action="" method="GET">
+              <div class="form-group row">
+                <label id="name-label" for="name" class="col-sm-5 col-form-label">Name</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label id="email-label" for="email" class="col-sm-5 col-form-label">Email</label>
+                <div class="col-sm-7">
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label id="number-label" for="number" class="col-sm-5 col-form-label">Age</label>
+                <div class="col-sm-7">
+                  <input type="number" class="form-control" id="number" placeholder="Age" min="1" max="120" required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="current-role" class="col-sm-5 col-form-label">
+                    Which option best describes your current role?
+                </label>
+                <div class="col-sm-7">
+                  <select id="dropdown" name="current-role" class="custom-select">
+                    <option disabled>Select an option</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer Not To Say</option>
+                    <option value="6">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="current-role" class="col-sm-5 col-form-label">
+                    How likely is that you would recommend freeCodeCamp to a friend?
+                </label>
+                <div class="col-sm-7">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" value="0" id="recommend1" name="recommend" class="custom-control-input">
+                    <label class="custom-control-label" for="recommend1">Definitely</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" value="1" id="recommend2" name="recommend" class="custom-control-input">
+                    <label class="custom-control-label" for="recommend2">Maybe</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" value="2" id="recommend3" name="recommend" class="custom-control-input">
+                    <label class="custom-control-label" for="recommend3">Not Sure</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="" class="col-sm-5 col-form-label">
+                    Things that should be improved in the future (Check all that apply)
+                </label>
+                <div class="col-sm-7">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="1" id="improve1" class="custom-control-input">
+                    <label class="custom-control-label" for="improve1">Front-end Projects</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="2" id="improve2" class="custom-control-input">
+                    <label for="improve2" class="custom-control-label">Back-end Projects</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="3" id="improve3" class="custom-control-input">
+                    <label for="improve3" class="custom-control-label">Data Visualization</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="4" id="improve4" class="custom-control-input">
+                    <label for="improve4" class="custom-control-label">Challenges</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="5" id="improve5" class="custom-control-input">
+                    <label for="improve5" class="custom-control-label">Open Source Community</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="6" id="improve6" class="custom-control-input">
+                    <label for="improve6" class="custom-control-label">Gitter help rooms</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="7" id="improve7" class="custom-control-input">
+                    <label for="improve7" class="custom-control-label">Videos</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="8" id="improve8" class="custom-control-input">
+                    <label for="improve8" class="custom-control-label">City Meetups</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="9" id="improve9" class="custom-control-input">
+                    <label for="improve9" class="custom-control-label">Wiki</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="10" id="improve10" class="custom-control-input">
+                    <label for="improve10" class="custom-control-label">Forum</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" value="11" id="improve11" class="custom-control-input">
+                    <label for="improve11" class="custom-control-label">Additional Courses</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="comments" class="col-sm-5 col-form-label">
+                    Any Comments or Suggestions?
+                </label>
+                <div class="col-sm-7">
+                  <textarea class="form-control" id="comments" rows="3" placeholder="Enter your commment here"></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="mx-auto col-xs-12 col-md-6">
+                  <button id="submit" type="submit" class="btn btn-block btn-info">Submit</button>
+                </div>
+              </div>
+            </form>
   
+          </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-  <script src="js/utils.js"></script>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

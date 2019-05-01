@@ -1,0 +1,9 @@
+label {
+  text-align: right !important;
+}
+
+@media (max-width: 576px) {
+  label {
+    text-align: left !important;
+  }
+}
